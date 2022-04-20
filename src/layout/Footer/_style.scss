@@ -1,0 +1,117 @@
+.footer{
+  background: #3e3e3e;
+  padding-top: 43px;
+  padding-bottom: 39px;
+  .social_btn {
+    width: 27px;
+    height: 27px;
+    border-radius: 100%;
+    background: transparent;
+    border: 1px solid #8F8E94;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    .footer_social_link_icon{
+      fill: #8F8E94;
+    }
+    &:hover{
+      background: #C73D3D;
+      border: 1px solid #C73D3D;
+      .footer_social_link_icon{
+        fill: #FFFFFF !important;
+      }
+    }
+}
+
+
+  .main_footer_wrapper{
+    display: flex;
+    justify-content: space-between;
+  }
+  .social_links_box{
+    display: flex;
+    align-items: center;
+    .social_btn{
+      margin-left: 10px;
+    }
+  }
+  .footer_left_box{
+    margin-bottom: 59px;
+    .footer_logo{
+      margin-bottom: 62px;
+    }
+    .footer_lft_bottom{
+      p{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 180%;
+        color: #FFFFFF;
+      }
+      span{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 180%;
+        color: #FFFFFF;
+      }
+      .contact_number_footer{
+        p{
+          margin-top: 59px;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 180%;
+          color: #FFFFFF;
+        }
+        a{
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 180%;
+          color: #FFFFFF;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  .footer_right_wrapper{
+    // display: none;
+    display: flex;
+    justify-content: space-between;
+
+    .footer_right_wrapper_item{
+      h2{
+        margin-bottom: 20px;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 27px;
+        color: #FFFFFF;
+      }
+      ul{
+        li{
+          margin-bottom:10px;
+          a{
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 160%;
+            color: #909090;
+            &:hover{
+              color: #a7a7a7;
+            }
+          }
+        }
+      }
+    }
+  }
+  .footer_menu_mobile{
+      display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .footer_right_wrapper{
+    display: none;
+  }
+  .footer_menu_mobile{
+    display: block;
+  }
+}
